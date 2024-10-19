@@ -1,0 +1,74 @@
+/* Estils base de la pàgina */
+@import "base.css";
+
+main {
+	background-color: var(--fons);
+	padding: var(--mida-var);
+}
+footer ul, header ul {
+	display: flex;
+	flex-flow: row wrap;
+    justify-content: flex-start;
+	gap: 0 1rem;
+}
+
+
+/* Capçalera */
+div.foli {
+	background-color: var(--accent);
+	color: var(--fons);
+	padding: var(--ample-var);
+	font-family: var(--encap);
+	font-size: 1.1rem;
+}
+header nav {
+	background-color: var(--ter);
+	padding: var(--ample-var);
+}
+
+/* bread crumbs */
+div.molles {
+	background-color: var(--sec);
+	padding: var(--ample-var);
+}
+
+/* Peu */
+footer {
+	background-color: var(--ter);
+	padding: var(--mida-var);
+}
+
+/* Enllaços */
+a {
+	color: var(--accent);
+}
+a:hover {
+	text-decoration: none;
+}
+a:visited {
+	color: var(--vist);
+}
+a:active {
+	color: var(--actiu);
+}
+
+header a {
+	text-decoration: none;
+	color: var(--accent);
+}
+
+footer a, footer a:visited {
+	text-decoration: none;
+	color: var(--text);
+}
+footer a:active, footer a:hover {
+	text-decoration: underline;
+}
+
+/* Encapçalaments */
+h1 {
+	font-family: var(--encap);
+	color: var(--accent);
+	text-align: center;
+	font-size: 2rem;
+}

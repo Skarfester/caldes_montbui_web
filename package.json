@@ -1,0 +1,35 @@
+{
+  "name": "caldes_montbui_web",
+  "version": "1.0.0",
+  "description": "Eines HTML i CSS",
+  "source": "./src/index.html",
+  "browserslist": "> 0.5%, last 2 versions, Firefox ESR, not dead, not edge > 0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run clean; parcel",
+    "build": "npm run clean; parcel build",
+    "clean": "rm -r ./dist/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Skarfester/caldes_montbui_web.git"
+  },
+  "author": "David F. Fernández",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/Skarfester/caldes_montbui_web/issues"
+  },
+  "homepage": "https://github.com/Skarfester/caldes_montbui_web#readme",
+  "devDependencies": {
+    "parcel": "^2.12.0",
+    "parcel-resolver-ignore": "^2.2.0",
+    "postcss-import": "^16.1.0",
+    "posthtml-include": "^2.0.1"
+  },
+  "targets": {
+    "default": {
+      "publicUrl": "./"
+    }
+  },
+  "parcelIgnore": ["esquelet.html"]
+}
