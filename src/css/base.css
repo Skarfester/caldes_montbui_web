@@ -7,11 +7,11 @@
 	--accent: #3F2305;
 	--actiu: #a85f10;
 	--vist: #766757;
-	--petit: 0.8rem;
+	--petit: 0.9rem;
     --cos: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
 	--encap: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
 	--mida-var: max(3vw, 1.5rem);
-	--ample-var: 0.5rem max(3vw, 1.5rem);
+	--ample-var: max(3vw, 1.5rem);
 }
 
 * {
