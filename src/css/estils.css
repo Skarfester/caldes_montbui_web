@@ -4,6 +4,7 @@
 main {
 	background-color: var(--fons);
 	padding: var(--mida-var);
+	overflow: hidden;
 }
 footer ul, header ul {
 	display: flex;
@@ -11,9 +12,6 @@ footer ul, header ul {
     justify-content: center;
 	gap: 0 1rem;
 }
-/* footer li, header li {
-	display: inline-block;
-} */
 
 /* Capçalera */
 .foli {
@@ -43,14 +41,16 @@ header nav {
 
 /* Peu */
 footer {
-	background-color: var(--ter);
+	background-color: var(--accent);
+	color: var(--fons);
 	padding: var(--mida-var);
-	font-size: var(--petit);
+	font-size: var(--petit);	
 }
 .legal {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+	gap: 0 1rem;
 	margin-bottom: 1rem;
 }
 
@@ -78,14 +78,14 @@ header a, header a:visited {
 }
 header a:hover {
 	background-color: var(--sec);
-	border-top-left-radius: 1rem;
-	border-top-right-radius: 1rem;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
 }
 
 /* enllaços peu */
 footer a, footer a:visited {
 	text-decoration: none;
-	color: var(--text);
+	color: var(--fons);
 }
 footer a:active, footer a:hover {
 	text-decoration: underline;
@@ -108,12 +108,131 @@ h2 {
 	color: var(--accent);
 }
 
+/* Categories */
+li.catego {
+	background-color: var(--sec);
+	border-radius: 10px;
+	border: 2px solid var(--ter);
+	overflow: hidden;
+	margin-bottom: 2rem;
+}
+li.catego img {
+	width: 100%;
+	height: 100%;
+	aspect-ratio: 4/3;
+	object-fit: cover;
+}
+li.catego a {
+	text-decoration: none;
+	color: var(--text);
+	display: flex;
+	align-items: stretch;
+}
+li.catego picture {
+	flex: 1;
+}
+li.catego div {
+	flex: 2;
+	margin: 2rem;
+}
+li.catego h2 {
+	margin-top: 0;
+	font-size: 1.2rem;
+}
+
 /* Articles */
 article p {
 	margin-bottom: 0.3rem;
+}
+article.info {
+	border: 2px solid var(--sec);
+	border-radius: 10px;
+	padding: 1rem 3rem;
+}
+article.info hr {
+	border: 1px solid var(--sec);
+	margin: 2rem;
 }
 ul.dates strong {
 	display: inline-block;
 	width: 3rem;
 	margin-top: 0.5rem;
+}
+article picture img {
+	max-width: 50%;
+	height: auto;
+	float: left;
+	margin: 0 2rem 2rem 0;	
+	border: 2px solid var(--sec);
+}
+img.pano {
+	max-width: 100%;
+	float: none;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Altres articles de la secció */
+div.altres {
+	width: 100%;
+	border-top: 2px solid var(--sec);
+	margin-top: 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+div.altres h2 {
+	font-family: var(--cos);
+	font-size: 1.2rem;
+	font-weight: 500;
+	
+}
+
+div.altres ul {
+	list-style-type: disc;
+	color: var(--accent);
+}
+
+/* Presentació */
+article.present {
+	overflow: hidden;
+}
+.present h1 {
+	font-size: 4rem;
+	margin-bottom: 2rem;
+}
+.present h2 {
+	text-align: center;
+	margin: 0 0 1.5rem 0;
+}
+div.present {
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	border-top: 2px solid var(--sec);
+	margin-top: 2rem;
+	padding: 2rem;
+}
+.present ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 1rem;
+}
+.present a, .present a:visited {
+	display: inline-block;
+	text-decoration: none;
+	color: var(--accent);
+	background: var(--ter);
+	border-radius: 10px;
+	font-weight: bold;
+	padding: 0.5rem 1rem;
+}
+.present a:hover {
+	background-color: var(--sec);
+}
+.present a:active {
+	color: var(--actiu);
 }
