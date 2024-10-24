@@ -1,5 +1,11 @@
-/* Estils base de la pàgina */
+/* ESTILS BASE DE LA PÀGINA */
 @import "base.css";
+
+/* PÀGINES ESPECIALS */
+/* Presentació */
+@import "presentacio.css";
+/* Portada */
+@import "portada.css";
 
 main {
 	background-color: var(--fons);
@@ -13,9 +19,13 @@ footer ul, header ul {
 	gap: 0 1rem;
 }
 
-/* Capçalera */
+/* CAPÇALERA */
 .foli {
 	background-color: var(--accent);
+	background-image: url(../img/escut.svg);
+	background-repeat: no-repeat;
+	background-position: 5px; /* perquè no s'enganxi a l'esquerra */
+	background-size: auto 80%; /* perquè no ocupi tota l'alçada */
 	color: var(--fons);
 	padding: 0 var(--ample-var);
 	font-family: var(--encap);
@@ -23,6 +33,7 @@ footer ul, header ul {
 }
 .foli p {
 	padding: 0.5rem 0;
+	text-shadow: 2px 2px 2px var(--text);
 }
 header nav {
 	background-color: var(--ter);
@@ -39,7 +50,19 @@ header nav {
 	padding: 0.5rem 0;
 }
 
-/* Peu */
+/* enllaços menú */
+header a, header a:visited {
+	display: inline-block;
+	text-decoration: none;
+	color: var(--accent);
+	font-weight: bold;
+	padding: 0.5rem;
+}
+header a:hover {
+	background-color: var(--sec);
+}
+
+/* PEU */
 footer {
 	background-color: var(--accent);
 	color: var(--fons);
@@ -54,6 +77,16 @@ footer {
 	margin-bottom: 1rem;
 }
 
+/* enllaços peu */
+footer a, footer a:visited {
+	text-decoration: none;
+	color: var(--fons);
+}
+footer a:active, footer a:hover {
+	text-decoration: underline;
+}
+
+/* COS */
 /* Enllaços */
 a {
 	color: var(--accent);
@@ -66,29 +99,6 @@ a:visited {
 }
 a:active {
 	color: var(--actiu);
-}
-
-/* enllaços menú */
-header a, header a:visited {
-	display: inline-block;
-	text-decoration: none;
-	color: var(--accent);
-	font-weight: bold;
-	padding: 0.5rem;
-}
-header a:hover {
-	background-color: var(--sec);
-	border-top-left-radius: 10px;
-	border-top-right-radius: 10px;
-}
-
-/* enllaços peu */
-footer a, footer a:visited {
-	text-decoration: none;
-	color: var(--fons);
-}
-footer a:active, footer a:hover {
-	text-decoration: underline;
 }
 
 /* Encapçalaments */
@@ -108,56 +118,96 @@ h2 {
 	color: var(--accent);
 }
 
-/* Categories */
-li.catego {
+/* CATEGORIES */
+.catego {
 	background-color: var(--sec);
 	border-radius: 10px;
 	border: 2px solid var(--ter);
 	overflow: hidden;
 	margin-bottom: 2rem;
 }
-li.catego img {
+.catego img {
 	width: 100%;
 	height: 100%;
 	aspect-ratio: 4/3;
 	object-fit: cover;
 }
-li.catego a {
+.catego a {
 	text-decoration: none;
 	color: var(--text);
 	display: flex;
 	align-items: stretch;
 }
-li.catego picture {
+.catego picture {
 	flex: 1;
 }
-li.catego div {
+.catego div {
 	flex: 2;
 	margin: 2rem;
 }
-li.catego h2 {
+.catego h2 {
 	margin-top: 0;
 	font-size: 1.2rem;
 }
 
-/* Articles */
+/* ARTICLES */
 article p {
-	margin-bottom: 0.3rem;
+	margin: 0.6rem 0 0.3rem 0;
 }
-article.info {
+.info {
 	border: 2px solid var(--sec);
 	border-radius: 10px;
 	padding: 1rem 3rem;
 }
-article.info hr {
+.info hr {
 	border: 1px solid var(--sec);
 	margin: 2rem;
 }
-ul.dates strong {
+article ul {
+	margin-bottom: 1rem;
+	list-style-type: square;
+	margin-left: 2rem;
+}
+
+/* Llista desplegable */
+#bloc_desp {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	max-width: 500px;
+	background-color: var(--sec);
+	border: 2px solid var(--ter);
+	border-radius: 10px;
+	margin: 2rem auto;
+}
+#bloc_desp h2 {
+	margin: 0.5rem 1rem;
+	font-size: 1.2rem;
+	font-family: var(--cos);
+	text-align: center;
+}
+#llista_desp {
+	list-style-type: none;
+	width: 100%;
+	display: none;
+}
+#llista_desp.visible {
+	display: block;
+}
+#llista_desp strong { /* anys */
 	display: inline-block;
 	width: 3rem;
 	margin-top: 0.5rem;
 }
+
+/* Fletxa */
+#bloc_desp svg {
+	color: var(--accent);
+}
+
+/* Imatges */
 article picture img {
 	max-width: 50%;
 	height: auto;
@@ -165,7 +215,7 @@ article picture img {
 	margin: 0 2rem 2rem 0;	
 	border: 2px solid var(--sec);
 }
-img.pano {
+.pano {
 	max-width: 100%;
 	float: none;
 	display: block;
@@ -174,7 +224,7 @@ img.pano {
 }
 
 /* Altres articles de la secció */
-div.altres {
+.altres {
 	width: 100%;
 	border-top: 2px solid var(--sec);
 	margin-top: 2rem;
@@ -182,57 +232,14 @@ div.altres {
 	flex-direction: column;
 	align-items: center;
 }
-
-div.altres h2 {
+.altres h2 {
 	font-family: var(--cos);
 	font-size: 1.2rem;
 	font-weight: 500;
 	
 }
-
-div.altres ul {
+d.altres ul {
 	list-style-type: disc;
 	color: var(--accent);
 }
 
-/* Presentació */
-article.present {
-	overflow: hidden;
-}
-.present h1 {
-	font-size: 4rem;
-	margin-bottom: 2rem;
-}
-.present h2 {
-	text-align: center;
-	margin: 0 0 1.5rem 0;
-}
-div.present {
-	max-width: 800px;
-	margin-left: auto;
-	margin-right: auto;
-	border-top: 2px solid var(--sec);
-	margin-top: 2rem;
-	padding: 2rem;
-}
-.present ul {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	gap: 1rem;
-}
-.present a, .present a:visited {
-	display: inline-block;
-	text-decoration: none;
-	color: var(--accent);
-	background: var(--ter);
-	border-radius: 10px;
-	font-weight: bold;
-	padding: 0.5rem 1rem;
-}
-.present a:hover {
-	background-color: var(--sec);
-}
-.present a:active {
-	color: var(--actiu);
-}

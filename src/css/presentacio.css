@@ -1,0 +1,40 @@
+article.present {
+	overflow: hidden;
+}
+.present h1 {
+	font-size: 4rem;
+	margin-bottom: 2rem;
+}
+.present h2 {
+	text-align: center;
+	margin: 0 0 1.5rem 0;
+}
+div.present {
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	border-top: 2px solid var(--sec);
+	margin-top: 2rem;
+	padding: 2rem;
+}
+.present ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 1rem;
+}
+.present a, .present a:visited {
+	display: inline-block;
+	text-decoration: none;
+	color: var(--accent);
+	background: var(--ter);
+	border-radius: 10px;
+	font-weight: bold;
+	padding: 0.5rem 1rem;
+}
+.present a:hover {
+	background-color: var(--sec);
+}
+.present a:active {
+	color: var(--actiu);
+}
