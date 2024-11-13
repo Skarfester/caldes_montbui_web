@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "description": "Eines HTML i CSS",
   "source": "./src/index.html",
-  "browserslist": "> 0.5%, last 2 versions, Firefox ESR, not dead, not edge > 0",
+  "browserslist": ">0.2%, Firefox ESR, ie 11",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run clean; parcel",
-    "build": "npm run clean; parcel build",
+    "build": "npm run clean; parcel build && npm run robots",
+	"robots": "cp -v ./src/robots.txt ./src/humans.txt ./dist/",
     "clean": "rm -r ./dist/*"
   },
   "repository": {

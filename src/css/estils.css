@@ -154,10 +154,11 @@ h2 {
 article p {
 	margin: 0.6rem 0 0.3rem 0;
 }
+/* visita */
 .info {
 	border: 2px solid var(--sec);
 	border-radius: 10px;
-	padding: 1rem 3rem;
+	padding: 1rem var(--mida-var);
 }
 .info hr {
 	border: 1px solid var(--sec);
@@ -243,3 +244,13 @@ d.altres ul {
 	color: var(--accent);
 }
 
+/* VERSIÓ MÒBIL */
+/* aquest codi ha d'anar al final, per això no puc afegir-lo amb @import */
+@media screen and (max-width: 600px) {
+	.catego a {
+		flex-direction: column;
+	}
+	.catego img {
+		aspect-ratio: 5/2;
+	}
+}
