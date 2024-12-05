@@ -2,7 +2,7 @@
 	background-color: var(--ter); /* per si falla la resta */
 	background-image: url(../img/termes_fons.jpg); /* per si image-set no està suportat */
 	background-image: image-set(
-		url("../img/termes_fons.avif") type("image/avif"),
+		url("../img/termes_fons.jpg?as=avif") type("image/avif"),
 		url("../img/termes_fons.jpg") type("image/jpeg")
 	);
   	background-repeat: no-repeat;
@@ -58,43 +58,43 @@
 .menu li:nth-of-type(1) a:hover {
 	background-image: url(../img/m_font_lleo.jpg); /* per si image-set no està suportat */
 	background-image: image-set(
-		url("../img/m_font_lleo.avif") type("image/avif"),
+		url("../img/m_font_lleo.jpg?as=avif") type("image/avif"),
 		url("../img/m_font_lleo.jpg") type("image/jpeg")
 	);
 }
 .menu li:nth-of-type(2) a:hover {
-	background-image: url(../img/m_caldes_montbui.jpg); /* per si image-set no està suportat */
+	background-image: url(../img/caldes_montbui.jpg); /* per si image-set no està suportat */
 	background-image: image-set(
-		url("../img/m_caldes_montbui.avif") type("image/avif"),
-		url("../img/m_caldes_montbui.jpg") type("image/jpeg")
+		url("../img/caldes_montbui.jpg?as=avif&height=225") type("image/avif"),
+		url("../img/caldes_montbui.jpg?height=225") type("image/jpeg")
 	);
 }
 .menu li:nth-of-type(3) a:hover {
-	background-image: url(../img/m_termes_romanes.jpg); /* per si image-set no està suportat */
+	background-image: url(../img/termes_romanes.jpg); /* per si image-set no està suportat */
 	background-image: image-set(
-		url("../img/m_termes_romanes.avif") type("image/avif"),
-		url("../img/m_termes_romanes.jpg") type("image/jpeg")
+		url("../img/termes_romanes.jpg?as=avif&height=225") type("image/avif"),
+		url("../img/termes_romanes.jpg?height=225") type("image/jpeg")
 	);
 }
 .menu li:nth-of-type(4) a:hover {
-	background-image: url(../img/m_balneari_broquetas.jpg); /* per si image-set no està suportat */
+	background-image: url(../img/balneari_broquetas.jpg); /* per si image-set no està suportat */
 	background-image: image-set(
-		url("../img/m_balneari_broquetas.avif") type("image/avif"),
-		url("../img/m_balneari_broquetas.jpg") type("image/jpeg")
+		url("../img/balneari_broquetas.jpg?as=avif&height=225") type("image/avif"),
+		url("../img/balneari_broquetas.jpg?height=225") type("image/jpeg")
 	);
 }
 .menu li:nth-of-type(5) a:hover {
 	background-image: url(../img/safareig_canaleta.jpg); /* per si image-set no està suportat */
 	background-image: image-set(
-		url("../img/m_safareig_canaleta.avif") type("image/avif"),
-		url("../img/m_safareig_canaleta.jpg") type("image/jpeg")
+		url("../img/safareig_canaleta.jpg?as=avif&height=225") type("image/avif"),
+		url("../img/safareig_canaleta.jpg?height=225") type("image/jpeg")
 	);
 }
 .menu li:nth-of-type(6) a:hover {
 	background-image: url(../img/titellaire.jpg); /* per si image-set no està suportat */
 	background-image: image-set(
-		url("../img/m_titellaire.avif") type("image/avif"),
-		url("../img/m_titellaire.jpg") type("image/jpeg")
+		url("../img/titellaire.jpg?as=avif&height=225") type("image/avif"),
+		url("../img/titellaire.jpg?height=225") type("image/jpeg")
 	);
 }
 .menu a:active {
@@ -106,7 +106,7 @@
 	.portada {
 		background-image: url(../img/termes_fons_v.jpg);
 		background-image: image-set(
-			url("../img/termes_fons_v.avif") type("image/avif"),
+			url("../img/termes_fons_v.jpg?as=avif") type("image/avif"),
 			url("../img/termes_fons_v.jpg") type("image/jpeg")
 		);
 	}
