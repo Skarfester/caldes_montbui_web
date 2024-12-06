@@ -1,51 +1,147 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-<svg width="100" height="100" version="1.0" viewBox="0 0 602 602" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
- <title>Escut de Caldes de Montbui</title>
- <metadata>
-  <rdf:RDF>
-   <cc:Work rdf:about="">
-    <dc:format>image/svg+xml</dc:format>
-    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-   </cc:Work>
-  </rdf:RDF>
- </metadata>
- <defs>
-  <style type="text/css"/>
-  <style type="text/css"/>
-  <g id="s"></g>
- </defs>
- <g stroke="#000" stroke-linejoin="round">
-  <path d="m300.87 600.27h0.25178l-0.12589 0.1259z" fill="#c8b100" stroke-width="1.2"/>
-  <path d="m1.8832 301.3-0.12589-0.12589h0.12589z" fill="#c8b100" stroke-width="1.2"/>
-  <path d="m600.31 301.19-299.09 299.09h-0.25v-299.09z" fill="#ffdc14"/>
- </g>
- <g fill="#ff1e00" stroke="#000" stroke-linejoin="round" stroke-width="1.3">
-  <path d="m364.35 301.17v235.87l-32.7 32.702v-268.57z"/>
-  <path d="m430.04 301.17v170.18l-32.732 32.733v-202.92z"/>
-  <path d="m495.66 301.17v104.59l-32.7 32.702v-137.29z"/>
-  <path d="m561.34 301.17v38.902l-32.732 32.733v-71.636z"/>
- </g>
- <g stroke="#000">
-  <g stroke-linejoin="round">
-   <path d="m300.97 301.19v299.28l-299.28-299.28z" fill="#f5f5f5"/>
-   <path d="m237.33 301.17v81.141h63.638v32.985h-63.638v121.43l-32.952-32.954v-88.474h-88.47l-33.015-32.985h121.48v-81.141z" fill="#ff1e00" stroke-width="1.3"/>
-   <path d="m1.8832 301.17h-0.12589l-0.15736-0.15738 0.28325-0.28326z" fill="#c8b100" stroke-width="1.2"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="100"
+   height="100"
+   version="1.0"
+   viewBox="0 0 602 602"
+   id="svg454"
+   sodipodi:docname="escut.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview456"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="4.72"
+     inkscape:cx="36.864407"
+     inkscape:cy="74.788136"
+     inkscape:window-width="1920"
+     inkscape:window-height="1014"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg454" />
+  <title
+     id="title394">Escut de Caldes de Montbui</title>
+  <defs
+     id="defs400">
+    <style
+       type="text/css"
+       id="style396" />
+    <style
+       type="text/css"
+       id="style398" />
+  </defs>
+  <g
+     stroke="#000"
+     id="g430">
+    <g
+       stroke-linejoin="round"
+       id="g408">
+      <path
+         d="m300.87 600.27h0.25178l-0.12589 0.1259z"
+         fill="#c8b100"
+         stroke-width="1.2"
+         id="path402" />
+      <path
+         d="m1.8832 301.3-0.12589-0.12589h0.12589z"
+         fill="#c8b100"
+         stroke-width="1.2"
+         id="path404" />
+      <path
+         d="m600.31 301.19-299.09 299.09h-0.25v-299.09z"
+         fill="#ffdc14"
+         id="path406" />
+    </g>
+    <g
+       fill="#ff1e00"
+       stroke-linejoin="round"
+       stroke-width="1.3"
+       id="g418">
+      <path
+         d="m364.35 301.17v235.87l-32.7 32.702v-268.57z"
+         id="path410" />
+      <path
+         d="m430.04 301.17v170.18l-32.732 32.733v-202.92z"
+         id="path412" />
+      <path
+         d="m495.66 301.17v104.59l-32.7 32.702v-137.29z"
+         id="path414" />
+      <path
+         d="m561.34 301.17v38.902l-32.732 32.733v-71.636z"
+         id="path416" />
+    </g>
+    <g
+       stroke-linejoin="round"
+       id="g426">
+      <path
+         d="m300.97 301.19v299.28l-299.28-299.28z"
+         fill="#f5f5f5"
+         id="path420" />
+      <path
+         d="m237.33 301.17v81.141h63.638v32.985h-63.638v121.43l-32.952-32.954v-88.474h-88.47l-33.015-32.985h121.48v-81.141z"
+         fill="#ff1e00"
+         stroke-width="1.3"
+         id="path422" />
+      <path
+         d="m1.8832 301.17h-0.12589l-0.15736-0.15738 0.28325-0.28326z"
+         fill="#c8b100"
+         stroke-width="1.2"
+         id="path424" />
+    </g>
+    <path
+       d="m301 1.5 298.69 298.69h-597.37z"
+       fill="#ffdc14"
+       id="path428" />
   </g>
-  <path d="m301 1.5 298.69 298.69h-597.37z" fill="#ffdc14"/>
- </g>
- <g transform="matrix(-1 0 0 1 576 -419.36)">
-  <rect transform="rotate(-45)" x="-526.7" y="492.05" width="423.56" height="423.56" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
- </g>
- <g transform="matrix(1.5648 0 0 1.5648 -58.627 64.526)" stroke="#969696">
-  <path d="m225.15 2.125c-28.159 0-50.812 22.654-50.812 50.812v18.219h8.625v-17.625c0-23.784 19.153-42.938 42.938-42.938h7.8438c23.784 0 42.906 19.153 42.906 42.938v17.625h8.6562v-18.219c0-28.159-22.685-50.812-50.844-50.812z" stroke-linecap="square" stroke-width="1.2781"/>
-  <g transform="matrix(1.6214 0 0 1.6214 -143.61 -276.98)" fill-rule="evenodd" stroke-width=".78827">
-   <g transform="translate(.25145)">
-    <path d="m194.08 207.25-2.1435 2.9171c-5.5083-0.49661-4.0525 6.302-1.2947 6.6328 1.9443 0.17178 3.2081 0.52048 4.5099-0.92835l2.6827-7.634"/>
-    <path d="m266.04 207.25 2.1435 2.9171c5.5083-0.49661 4.0525 6.302 1.2947 6.6328-1.9443 0.17178-3.2081 0.52048-4.5099-0.92835l-2.6827-7.634"/>
-   </g>
-   <path d="m195.75 208.75c-0.80166 2.9914-1.25 10.13-1.25 13.375 0 19.876 16.045 36 35.812 36s35.812-16.125 35.812-36c0-3.2426-0.41823-10.386-1.2188-13.375-20.853 4.1224-42.269 7.1908-69.156 0z" stroke-linejoin="round"/>
-   <path d="m191.71 200.59c-3.0499 0.12227-0.87267 7.2131 0.6875 8.0312 9.2098 4.9837 18.33 7.6685 37.906 7.6685 19.287 0 28.723-2.6821 37.938-7.6685 1.783-0.93507 4.3512-10.075-0.96875-7.625-11.14 7.026-21.042 8.171-36.938 8.171-16.183 0-25.13-2.7301-36.969-8.171-0.665-0.30624-1.2206-0.42372-1.6562-0.40625z"/>
+  <g
+     transform="matrix(-1 0 0 1 576 -419.36)"
+     id="g434">
+    <rect
+       transform="rotate(-45)"
+       x="-526.7"
+       y="492.05"
+       width="423.56"
+       height="423.56"
+       fill="none"
+       stroke="#000"
+       stroke-linecap="round"
+       stroke-linejoin="round"
+       stroke-width="3"
+       id="rect432" />
   </g>
- </g>
+  <g
+     id="g2"
+     transform="matrix(0.46080497,0,0,0.46080497,93.642778,-120.83459)"
+     style="stroke-width:13.0641">
+    <path
+       id="rect5"
+       d="m 434.515,443.889 c -93.3312,0 -168.418,73.1202 -168.418,164.007 v 58.8046 h 28.5875 v -56.8881 c 0,-76.7686 63.483,-138.589 142.316,-138.589 h 25.998 c 78.833,0 142.212,61.8206 142.212,138.589 v 56.8881 h 28.6911 V 607.896 c 0,-90.8871 -75.19,-164.007 -168.521,-164.007 z"
+       style="display:inline;fill:#000000;stroke-width:13.0641" />
+    <path
+       id="path6"
+       d="m 256.659,627.639 -11.5193,15.2665 c -29.6025,-2.59896 -21.7786,32.9807 -6.95779,34.7119 10.449,0.89899 17.241,2.72388 24.2367,-4.85843 l 14.417,-39.9518"
+       style="display:inline;fill:#000000;fill-rule:evenodd;stroke-width:13.0641" />
+    <path
+       id="path7"
+       d="m 643.341,627.639 11.5193,15.2665 c 29.6025,-2.59896 21.7786,32.9807 6.95779,34.7119 -10.449,0.89899 -17.241,2.72388 -24.2367,-4.85843 l -14.417,-39.9518"
+       style="display:inline;fill:#000000;fill-rule:evenodd;stroke-width:13.0641" />
+    <path
+       id="path8"
+       d="m 264.256,635.49 c -4.30823,15.6554 -6.71767,53.0146 -6.71767,69.9968 0,104.017 86.2282,188.403 192.461,188.403 106.2328,0 192.461,-84.3861 192.461,-188.403 0,-16.9697 -2.24763,-54.3517 -6.54973,-69.9968 -112.069,21.5742 -227.16,37.6324 -371.655,0 z"
+       style="display:inline;fill:#000000;fill-rule:evenodd;stroke-width:13.0641" />
+    <path
+       id="path9"
+       d="m 242.536,592.805 c -16.3904,0.63989 -4.68985,37.7489 3.69472,42.0308 49.4946,26.0817 98.5058,40.1325 203.714,40.1325 103.652,0 154.36,-14.0367 203.881,-40.1325 9.58237,-4.89361 23.384,-52.726 -5.20619,-39.9047 -59.8702,36.7699 -113.081,42.7622 -198.507,42.7622 -86.9708,0 -135.052,-14.2878 -198.675,-42.7622 -3.5738,-1.60268 -6.55941,-2.2175 -8.90092,-2.12608 z"
+       style="display:inline;fill:#000000;fill-rule:evenodd;stroke-width:13.0641" />
+  </g>
 </svg>

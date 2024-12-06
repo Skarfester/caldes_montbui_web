@@ -25,6 +25,30 @@
 	color: var(--fons2);
 	text-shadow: 2px 2px 2px var(--text);
 }
+.portada svg {
+	filter: drop-shadow(3px 3px 3px var(--text));
+}
+
+/* animació bandera svg */
+@keyframes pendol {
+	0% {
+		transform: rotate(20deg);
+	}
+	100% {
+		transform: rotate(-20deg);
+	}
+}
+#caldera {
+	transform-box: fill-box;
+	transform-origin: top center;
+	animation: pendol 5s ease-in-out;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+#caldera:hover {
+	animation-play-state: paused;
+}
+
 .menu {
 	max-width: 40rem;
 	margin: 4rem auto;
