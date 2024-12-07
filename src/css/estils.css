@@ -22,10 +22,10 @@ footer ul, header ul {
 /* CAPÇALERA */
 .foli {
 	background-color: var(--accent);
-	background-image: url(../img/escut.svg);
+	background-image: url(../img/favicon.svg);
 	background-repeat: no-repeat;
-	background-position: 5px; /* perquè no s'enganxi a l'esquerra */
-	background-size: auto 80%; /* perquè no ocupi tota l'alçada */
+	background-position: calc(100% - 7px); /* perquè no s'enganxi a l'esquerra */
+	background-size: auto 70%; /* perquè no ocupi tota l'alçada */
 	color: var(--fons);
 	padding: 0 var(--ample-var);
 	font-family: var(--encap);
@@ -174,10 +174,30 @@ article p {
 	border: 1px solid var(--sec);
 	margin: 2rem;
 }
+.info h2 {
+	padding-left: 3rem;
+	background: url(../img/euro.svg);
+	background-repeat: no-repeat;
+}
+.info h2:first-of-type {
+	background: url(../img/uhr.svg);
+	background-repeat: no-repeat;
+}
+.info h2:last-of-type {
+	background: url(../img/phone.svg);
+	background-repeat: no-repeat;
+}
+.info ul + p {
+	font-size: var(--petit);
+	margin-left: 2rem;
+}
 article ul {
 	margin-bottom: 1rem;
 	list-style-type: square;
 	margin-left: 2rem;
+}
+li::marker {
+	color: var(--ter);
 }
 
 /* Llista desplegable */
@@ -241,8 +261,11 @@ article picture img {
 	max-width: 50%;
 	height: auto;
 	float: left;
-	margin: 0 2rem 2rem 0;	
+	margin: 2rem 2rem 2rem 0;	
 	border: 2px solid var(--sec);
+}
+article h1 + picture img { /* la primera imatge a dalt de tot */
+	margin: 0 2rem 2rem 0;
 }
 .pano {
 	max-width: 100%;
