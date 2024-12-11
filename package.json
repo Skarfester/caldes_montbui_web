@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run clean; parcel",
     "build": "npm run clean; parcel build && npm run robots",
-	"robots": "cp -v ./src/robots.txt ./src/humans.txt ./dist/",
+    "robots": "cp -v ./src/robots.txt ./src/humans.txt ./dist/",
     "clean": "rm -r ./dist/*"
   },
   "repository": {
@@ -25,12 +25,16 @@
     "parcel": "^2.12.0",
     "parcel-resolver-ignore": "^2.2.0",
     "postcss-import": "^16.1.0",
-    "posthtml-include": "^2.0.1"
+    "posthtml-include": "^2.0.1",
+    "sharp": "^0.33.5",
+    "svgo": "^3.3.2"
   },
   "targets": {
     "default": {
       "publicUrl": "./"
     }
   },
-  "parcelIgnore": ["esquelet.html"]
+  "parcelIgnore": [
+    "esquelet.html"
+  ]
 }

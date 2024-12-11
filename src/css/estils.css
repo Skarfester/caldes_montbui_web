@@ -22,10 +22,10 @@ footer ul, header ul {
 /* CAPÇALERA */
 .foli {
 	background-color: var(--accent);
-	background-image: url(../img/escut.svg);
+	background-image: url(../img/favicon.svg);
 	background-repeat: no-repeat;
-	background-position: 5px; /* perquè no s'enganxi a l'esquerra */
-	background-size: auto 80%; /* perquè no ocupi tota l'alçada */
+	background-position: calc(100% - 7px); /* perquè no s'enganxi a l'esquerra */
+	background-size: auto 70%; /* perquè no ocupi tota l'alçada */
 	color: var(--fons);
 	padding: 0 var(--ample-var);
 	font-family: var(--encap);
@@ -65,6 +65,10 @@ header a:hover {
 /* PEU */
 footer {
 	background-color: var(--accent);
+	background-image: url(../img/caldera.svg);
+	background-repeat: no-repeat;
+	background-position: top -1rem right -1rem;
+	background-size: auto 150%;
 	color: var(--fons);
 	padding: var(--mida-var);
 	font-size: var(--petit);	
@@ -131,6 +135,12 @@ h2 {
 	height: 100%;
 	aspect-ratio: 4/3;
 	object-fit: cover;
+	object-position: top left;
+	transform: scale(1);
+	transition: transform 0.5s ease-out;
+}
+.catego:hover img {
+	transform: scale(1.1);
 }
 .catego a {
 	text-decoration: none;
@@ -164,10 +174,30 @@ article p {
 	border: 1px solid var(--sec);
 	margin: 2rem;
 }
+.info h2 {
+	padding-left: 3rem;
+	background: url(../img/euro.svg);
+	background-repeat: no-repeat;
+}
+.info h2:first-of-type {
+	background: url(../img/uhr.svg);
+	background-repeat: no-repeat;
+}
+.info h2:last-of-type {
+	background: url(../img/phone.svg);
+	background-repeat: no-repeat;
+}
+.info ul + p {
+	font-size: var(--petit);
+	margin-left: 2rem;
+}
 article ul {
 	margin-bottom: 1rem;
 	list-style-type: square;
 	margin-left: 2rem;
+}
+li::marker {
+	color: var(--ter);
 }
 
 /* Llista desplegable */
@@ -178,26 +208,37 @@ article ul {
 	justify-content: center;
 	cursor: pointer;
 	max-width: 500px;
-	background-color: var(--sec);
-	border: 2px solid var(--ter);
+	background-color: var(--ter);
+	border: 3px solid transparent;
 	border-radius: 10px;
 	margin: 2rem auto;
 }
+#bloc_desp:hover {
+	background-color: var(--sec);
+	border-color: var(--ter);
+}
+#bloc_desp.visible:hover {
+	border-color: var(--ter);
+} 
 #bloc_desp h2 {
 	margin: 0.5rem 1rem;
 	font-size: 1.2rem;
 	font-family: var(--cos);
 	text-align: center;
 }
-#llista_desp {
+#bloc_desp ul {
 	list-style-type: none;
 	width: 100%;
 	display: none;
 }
-#llista_desp.visible {
+#bloc_desp.visible {
+	background-color: var(--sec);
+	border-color: transparent;
+}
+#bloc_desp.visible ul {
 	display: block;
 }
-#llista_desp strong { /* anys */
+#bloc_desp ul strong { /* anys */
 	display: inline-block;
 	width: 3rem;
 	margin-top: 0.5rem;
@@ -207,14 +248,24 @@ article ul {
 #bloc_desp svg {
 	color: var(--accent);
 }
+/* animació fletxa */
+#bloc_desp svg {
+	transition: transform 0.2s ease-out;
+}
+#bloc_desp.visible svg {
+	transform: rotate(180deg);
+}
 
 /* Imatges */
 article picture img {
 	max-width: 50%;
 	height: auto;
 	float: left;
-	margin: 0 2rem 2rem 0;	
+	margin: 2rem 2rem 2rem 0;	
 	border: 2px solid var(--sec);
+}
+article h1 + picture img { /* la primera imatge a dalt de tot */
+	margin: 0 2rem 2rem 0;
 }
 .pano {
 	max-width: 100%;
@@ -222,6 +273,20 @@ article picture img {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+}
+/* animació imatges */
+@keyframes difuminar {
+	0% {
+		opacity: 0;
+		transform: scale(0.9) ;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+article picture img, .pano {
+	animation: difuminar 0.5s ease-out;
+	animation-fill-mode: forwards;
 }
 
 /* Altres articles de la secció */
@@ -252,5 +317,13 @@ d.altres ul {
 	}
 	.catego img {
 		aspect-ratio: 5/2;
+		object-position: center;
+	}
+	article picture img {
+		float: none;
+		max-width: 100%;
+		aspect-ratio: 16/9;
+		object-fit: cover;
+		object-position: top center;
 	}
 }

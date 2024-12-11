@@ -31,10 +31,32 @@ div.present {
 	border-radius: 10px;
 	font-weight: bold;
 	padding: 0.5rem 1rem;
+	border: 3px solid transparent;
 }
 .present a:hover {
 	background-color: var(--sec);
+	border-color: var(--ter);
 }
 .present a:active {
 	color: var(--actiu);
+	border-color: var(--actiu);
+}
+/* animació imatge */
+@keyframes cercle {
+	0% {
+		/* clip-path: polygon(0 0, 0 0, 0 100%, 0 100%); lateral */
+		/*clip-path: polygon(0 0, 100% 0, 100% 0, 0 0); vertical */
+		clip-path: circle(0% at 50% 50%);
+		opacity: 0;
+		transform: scale(0.8);
+	}
+	100% {
+		/* clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); */
+		clip-path: circle(70.7% at 50% 50%);
+		opacity: 1;
+	}
+}
+.present img {
+	animation: cercle 0.5s ease-out;
+	animation-fill-mode: forward;
 }
