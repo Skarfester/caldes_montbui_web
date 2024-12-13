@@ -264,6 +264,10 @@ article picture img {
 	margin: 2rem 2rem 2rem 0;	
 	border: 2px solid var(--sec);
 }
+article picture:nth-of-type(2) img { /* segona imatge de l'article */
+	float: right;
+	margin: 2rem 2rem 0 2rem;
+}
 article h1 + picture img { /* la primera imatge a dalt de tot */
 	margin: 0 2rem 2rem 0;
 }
