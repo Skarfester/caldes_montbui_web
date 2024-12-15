@@ -1,3 +1,4 @@
+/* Imatge de fons per defecte (horitzontal gran) */
 .portada {
 	background-color: var(--ter); /* per si falla la resta */
 	background-image: url(../img/termes_fons.jpg); /* per si image-set no està suportat */
@@ -125,10 +126,28 @@
 	opacity: 60%;
 }
 
-/* FORMAT VERTICAL */
-@media (orientation: portrait) {
+/* Imatges de fons alternatives */
+/* Horitzontal petita */
+@media screen and (orientation: landscape) and (max-width: 1080px) {
 	.portada {
-		background-image: url(../img/termes_fons_v.jpg);
+		background-image: image-set(
+			url("../img/termes_fons.jpg?as=avif&width=1080") type("image/avif"),
+			url("../img/termes_fons.jpg?width=1080") type("image/jpeg")
+		);
+	}
+}
+/* format vertical petita */
+@media (orientation: portrait) and (max-width: 800px) {
+	.portada {
+		background-image: image-set(
+			url("../img/termes_fons_v.jpg?as=avif&width=800") type("image/avif"),
+			url("../img/termes_fons_v.jpg?width=800") type("image/jpeg")
+		);
+	}
+  }
+/* format vertical gran */
+@media (orientation: portrait) and (min-width: 801px) {
+	.portada {
 		background-image: image-set(
 			url("../img/termes_fons_v.jpg?as=avif") type("image/avif"),
 			url("../img/termes_fons_v.jpg") type("image/jpeg")
