@@ -58,5 +58,6 @@ div.present {
 }
 .present img {
 	animation: cercle 0.5s ease-out;
-	animation-fill-mode: forward;
+	animation-delay: 0.5s;
+	animation-fill-mode: both;
 }
