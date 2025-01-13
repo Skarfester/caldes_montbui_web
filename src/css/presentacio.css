@@ -5,42 +5,13 @@ article.present {
 	font-size: 4rem;
 	margin-bottom: 2rem;
 }
-.present h2 {
-	text-align: center;
-	margin: 0 0 1.5rem 0;
-}
-div.present {
-	max-width: 800px;
-	margin-left: auto;
-	margin-right: auto;
-	border-top: 2px solid var(--sec);
-	margin-top: 2rem;
-	padding: 2rem;
-}
-.present ul {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	gap: 1rem;
-}
-.present a, .present a:visited {
-	display: inline-block;
-	text-decoration: none;
-	color: var(--accent);
-	background: var(--ter);
-	border-radius: 10px;
+/* Encapçalament categories */
+.present + .altres h2 {
+	font-family: var(--encap);
+	font-size: 2rem;
 	font-weight: bold;
-	padding: 0.5rem 1rem;
-	border: 3px solid transparent;
 }
-.present a:hover {
-	background-color: var(--sec);
-	border-color: var(--ter);
-}
-.present a:active {
-	color: var(--actiu);
-	border-color: var(--actiu);
-}
+
 /* animació imatge */
 @keyframes cercle {
 	0% {
