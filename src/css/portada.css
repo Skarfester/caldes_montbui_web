@@ -146,7 +146,7 @@
 			url("../img/termes_fons_v.jpg?width=800") type("image/jpeg")
 		);
 	}
-  }
+}
 /* format vertical gran */
 @media (orientation: portrait) and (min-width: 801px) {
 	.portada {
@@ -155,4 +155,4 @@
 			url("../img/termes_fons_v.jpg") type("image/jpeg")
 		);
 	}
-  }
+}
