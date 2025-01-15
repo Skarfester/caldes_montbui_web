@@ -307,11 +307,35 @@ article picture img, .pano {
 	font-family: var(--cos);
 	font-size: 1.2rem;
 	font-weight: 500;
+	margin-bottom: 1.5rem;
 	
 }
-d.altres ul {
-	list-style-type: disc;
+div.altres ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 1rem;
+}
+div.altres a {
+	display: inline-block;
+	text-decoration: none;
 	color: var(--accent);
+	background: var(--ter);
+	border-radius: 10px;
+	font-weight: bold;
+	padding: 0.5rem 1rem;
+	border: 3px solid transparent;
+}
+div.altres a:visited {
+	color: var(--vist);
+}
+div.altres a:hover {
+	background-color: var(--sec);
+	border-color: var(--ter);
+}
+div.altres a:active {
+	color: var(--actiu);
+	border-color: var(--actiu);
 }
 
 /* VERSIÓ MÒBIL */
@@ -330,5 +354,20 @@ d.altres ul {
 		aspect-ratio: 16/9;
 		object-fit: cover;
 		object-position: top center;
+	}
+	/* enllaços peu forma de botó */
+	footer ul {
+		gap: 1rem;
+	}
+	footer a, footer a:visited {
+		display: inline-block;
+		text-decoration: none;
+		background: rgba(223, 215, 191, 0.1); /* color accent amb alpha */
+		border-radius: 10px;
+		padding: 0.5rem 1rem;
+	}
+	footer a:active, footer a:hover {
+		background: rgba(223, 215, 191, 0.5);
+		text-decoration: none;
 	}
 }
